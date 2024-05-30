@@ -133,7 +133,53 @@ section h1{
     margin: 10px;
 }
 
+.project{
+    display: flex;
+}
 
+.project .col1{
+    width: 50%;
+}
+.project .col2{
+    text-align: center;
+    background-color: var(--navy);
+    width: 50%;
+}
+.project .col2 h1{
+    color: var(--maroon);
+}
+.project .col1 .col{
+    padding: 10px;
+}
+.project .col1 .col .box{
+    background-color: var(--white);
+    width: 100%;
+    margin: 10px;
+    height: 200px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact h1{
+    width: 100%;
+    margin-top: 50px;
+    color: var(--white);
+}
+.contact .col{
+    background-color: var(--navy);
+    width: 48%;
+    height: 500px;
+    margin: 10px;
+}
+
+footer{
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
 @media only screen and (max-width: 780px) {
     .navbar ul{
         display: none;
