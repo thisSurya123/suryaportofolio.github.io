@@ -115,9 +115,11 @@ section h1{
 }
 
 .desc button:hover{
+    color: var(--navy);
+    background-color: white;
     cursor: pointer;
     transform: scale(1.3);
-    transition: transform 1s;
+    transition: transform 1s, background-color 1s;
 }
 
 .about{
@@ -181,17 +183,53 @@ section h1{
     color: var(--white);
     width: 100%;
 }
+.contact .col .platform{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+
+}
+.contact .col .platform .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+}
 .contact .col{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     padding-top: 50px;
 }   
-.contact .col .row{
+
+.contact .col .message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact .col .message textarea{
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+}
+/* .contact .col .row{
     width: 50%;
     align-items: center;
     padding-left: 15%;
     display: flex;
+} */
+.contact .col .message button{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.contact .col .message button:hover{
+    cursor: pointer;
 }
 .contact .col .row img{
     border-radius: 40%;
@@ -202,7 +240,7 @@ section h1{
     padding: 5px;
     background-color: var(--white);
 }
-.contact .col .row p a{
+.contact .col .row a{
     font-size: 20px;
     text-decoration: none;
     color: var(--white);
