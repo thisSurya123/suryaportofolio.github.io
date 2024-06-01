@@ -1,6 +1,7 @@
 HTML{
     scroll-behavior: smooth;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--maroon);
 }
 :root{
     --red: #FF204E;

@@ -39,6 +39,7 @@
     .about{
         display: flex;
         flex-wrap: wrap;
+        margin-top: 20px;
     }
     .about .galery{
         justify-content: center;
@@ -101,6 +102,10 @@
         margin: 0 auto;
     }
 
+    footer{
+        font-size: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 430px){
@@ -128,5 +133,8 @@
     }
     .profile h2{
         transform: translate(-180px);
+    }
+    .about .galery .col img{
+        width: 100px;
     }
 }
