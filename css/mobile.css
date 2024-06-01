@@ -1,0 +1,132 @@
+:root{
+    --red: #FF204E;
+    --maroon: #A0153E;
+    --dark: #5D0E41;
+    --navy: #00224D;
+    --white: #ffffff;
+}
+@media only screen and (max-width: 780px) {
+    .navbar ul{
+        display: none;
+    }
+    .navbar .menu{
+        display: inline-block;
+    }
+
+    .homepage{
+        flex-wrap: wrap;
+        padding: 0;
+
+    }
+    .desc{
+        order: 2;
+    }
+    .profile{
+        order: 1;
+        width: 100%;
+        transform: scale(0.9);
+    }
+    .profile img{
+        transform: translate(30px);
+    }
+    .profile h2{
+        transform: translate(10px);
+    }
+    .desc{
+        width: 100%;
+    }
+
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .galery{
+        justify-content: center;
+        margin:0 auto;
+    }
+    .about .col1{
+        width: 100%;
+    }
+    .about img{
+        width: 250px;
+    }
+    .about .galery .col img{
+        width: 100px;
+    }
+
+    .project{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project .col1{
+        order: 2;
+        width: 100%;
+    }
+
+    .project .col1 .box{
+        margin: 5px 0px;
+        text-align: center;
+    }
+
+    .project .col2{
+        width: 100%;
+    }
+
+    .project .col2 img{
+        width: 200px;
+    }
+    .contact .col .platform{
+        order: 2;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .contact .col .platform .row{
+        margin: 0;
+    }
+    .contact .col .platform .row a{
+        display: flex;
+        width: 100%;
+    }
+    .contact .col .platform .row img{
+        width: 90px;
+    }
+    .contact .col .message{
+        width: 100%;
+    }
+    .contact .col .message textarea{
+        width: 350px;
+        order: 1;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+    .navbar ul{
+        display: none;
+    }
+    .navbar .menu{
+        display: inline-block;
+    }
+
+    .homepage{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .desc{
+        order: 2;
+    }
+    .profile{
+        order: 1;
+        width: 100%;
+        transform: scale(0.5);
+    }
+    .profile img{
+        transform: translate(180px);
+    }
+    .profile h2{
+        transform: translate(-180px);
+    }
+}
