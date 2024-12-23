@@ -4,37 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            color1: '#00224D',
+          },
+          boxShadow: {  
+                'text': '10px 10px 5px black;'
+            }
+        },
+        fontFamily: {
+            monoton: ["Monoton", "serif"],
+            limelight: ["Limelight", "serif"],
+            merienda: ["Merienda", "serif"]
+        }
+      }
+    }
+
+    </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="menu">
+    <nav class="container-md py-5 font-monoton text-xl px-5 font-bold justify-between flex bg-[#00224D] text-[#ffffff]">
+
+        <div class="hidden">
             <p>Menu</p>
         </div>
+
         <h2>Portofolio</h2>
-        <ul>
-            <li><a href="#homepage">HOME</a></li>
-            <li><a href="#about">SKILLS</a></li>
-            <li><a href="#project">PROJECT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+        <ul class="flex font-limelight">
+            <li><a class="mx-3" href="#homepage">HOME</a></li>
+            <li><a class="mx-3" href="#about">SKILLS</a></li>
+            <li><a class="mx-3" href="#project">PROJECT</a></li>
+            <li><a class="mx-3" href="#contact">CONTACT</a></li>
         </ul>
     </nav>
-    <section class="homepage" id="homepage">
-        <div class="desc">
-         <h2>Welcome</h2>
-         <div class="description">
-            <p>Hallo, Selamat datang</p>
-            <p>Saya adalah seorang sofware engineering ini adalah 
-                website Portofolio saya yang berisikan informasi saya dan keahlian
-                yang saya meliki untuk mengembangkan web
+
+
+
+    <section class="flex flex-row bg-[#A0153E] h-screen" id="homepage">
+        <div class="bg-color1 text-white basis-5/6 m-5 p-5 rounded-xl relative">
+         <h2 class="text-[10rem]  text-[#A0153E;] font-bold mb-20">Welcome</h2>
+         <span class="underline bg-[#5D0E41] text-[3rem] block">Hy, There</span>
+         <div class="ml-5">
+
+            <p class="font-limelight text-[3rem] leading-none">
+                I'm Sofware Engineering
             </p>
-            <a href="assets/Surya Ahmad Afandi CV.pdf" download>Download CV</a>
-         </div>
+            <p class="font-limelight text-[3rem] leading-none">
+                I'm Web Developver
+            </p>
+            <p class="font-limelight text-[3rem] leading-none">
+                I'm UI UX Designer
+            </p>
+            <p class="font-limelight text-[3rem] leading-none">
+                I'm Digital Bussines
+            </p>
+
+
+            <a class="bg-[#000000] py-3 px-10 ring-2 hover:ring-blue-500 absolute  text-[2rem] left-2/3 rounded-xl" href="assets/Surya Ahmad Afandi CV.pdf" download>Download CV</a>
         </div>
-       <div class="profile">
-        <h2>SURYA AHMAD AFANDI</h2>
-        <img src="assets/surya.png" alt="surya">
+        </div>
+
+
+       <div class="bg-[#FF204E] h-5/6 w-3/6 my-auto mr-10 rounded-xl">
+        <h2 class="text-[8rem] text-center font-bold font-monoton text-white  my-auto leading-none mt-10" style="text-shadow: 10px 10px 5px black ;">
+            Together we are the Unity
+        </h2>
+        <!-- <img class="absolute top-0 right-40 w-[30rem] -translate-x-6 -translate-y-6 brightness-0" src="assets/mypic.png" alt="surya"> -->
+        <!-- <h2 class="bg-white py-2 rounded-xl text-center font-bold text-[2rem] z-50">Surya Ahmad Afandi</h2> -->
+        <img class="absolute top-0 right-40 w-[30rem] drop-shadow-xl z-0 " src="assets/mypic.png" alt="surya">
        </div>
     </section>
 
