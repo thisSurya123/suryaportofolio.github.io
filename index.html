@@ -30,8 +30,8 @@
 
     </script>
 </head>
-<body>
-    <nav class="container-md py-5 font-monoton text-xl px-5 font-bold justify-between flex bg-[#00224D] text-[#ffffff]">
+<body class="bg-gradient-to-r from-red-900 to-blue-900 ">
+    <nav class="py-5 font-monoton text-xl px-5 font-bold justify-between flex text-[#ffffff]">
 
         <div class="hidden">
             <p>Menu</p>
@@ -39,8 +39,6 @@
 
         <h2>Portofolio</h2>
         <ul class="flex font-limelight">
-            <li><a class="mx-3" href="#homepage">HOME</a></li>
-            <li><a class="mx-3" href="#about">SKILLS</a></li>
             <li><a class="mx-3" href="#project">PROJECT</a></li>
             <li><a class="mx-3 bg-color2 p-2 rounded-xl" href="#contact">CONTACT ME</a></li>
         </ul>
@@ -48,14 +46,14 @@
 
 
 
-    <section class="flex flex-row bg-[#A0153E] h-screen" id="homepage">
+    <section class="container mx-auto flex flex-row bg-[#A0153E] h-screen" id="homepage">
         <div class="bg-color1 text-white basis-5/6 my-20 mx-5 p-2 rounded-xl relative flex flex-col justify-center ">
          <h2 class="text-[5rem]  text-[#A0153E;] font-bold  font-limelight mb-5">Welcome</h2>
          <!-- <span class="underline bg-[#5D0E41] text-[3rem] block">Hy, There</span> -->
          <div class="ml-5">
 
-            <p class="font-limelight text-[4rem] leading-none">
-                Hy There, My name is Surya, 
+            <p class="font-limelight text-[2rem] leading-none mx-3">
+                <span class="bg-color3">Hy There</span>, My name is Surya, 
                 Im Software Engineering & fullstack web Developer
                 from Indonesia
             </p>
@@ -70,25 +68,25 @@
             </p> -->
 
 
-            <a class="bg-[#000000] py-3 px-10 ring-2 hover:ring-blue-500 absolute  text-[2rem] bottom-20 left-2/3 rounded-xl" href="assets/Surya Ahmad Afandi CV.pdf" download>Download CV</a>
+            <a class="bg-[#000000] py-3 px-10 ring-2 hover:ring-blue-500 absolute  text-[1.5rem] bottom-20 left-2/3 rounded-xl" href="assets/Surya Ahmad Afandi CV.pdf" download>Download CV</a>
         </div>
         </div>
 
 
-       <div class="bg-[#FF204E] h-5/6 w-3/6 my-auto mr-10 rounded-xl relative">
-        <h2 class="text-[8rem] text-center font-bold font-monoton text-white  my-auto leading-none mt-10 " style="text-shadow: 10px 10px 5px black ;">
-            Together we are the Unity
+       <div class="bg-[#FF204E] h-5/6 w-3/6 my-auto mr-10 rounded-xl text-center relative">
+        <h2 class="text-[5rem] text-center font-bold font-monoton text-white  my-auto leading-none mt-10 " style="text-shadow: 10px 10px 5px black ;">
+            Dev Build Design Coding Creator Digital Network Cyber Security
         </h2>
         <!-- <img class="absolute top-0 right-40 w-[30rem] -translate-x-6 -translate-y-6 brightness-0" src="assets/mypic.png" alt="surya"> -->
         <!-- <h2 class="bg-white py-2 rounded-xl text-center font-bold text-[2rem] z-50">Surya Ahmad Afandi</h2> -->
-        <img class="absolute  right-40 w-[30rem] drop-shadow-xl z-0 bottom-0" src="assets/mypic.png" alt="surya">
-        <p class="absolute bottom-0 bg-white w-full py-5 text-center text-[2rem] font-limelight rounded-xl">Surya Ahmad Afandi</p>
+        <img class="absolute  right-10 w-[30rem] drop-shadow-xl z-0 bottom-0" src="assets/mypic.png" alt="surya">
+        <p class="absolute bottom-0 bg-gradient-to-r from-blue-900 to-red-900 text-white w-full py-5 text-center text-[2rem] font-limelight rounded-xl">Surya Ahmad Afandi</p>
        </div>
     </section>
 
 
 
-    <section class="about bg-color3 h-screen" id="about">
+    <section class="about h-screen my-10" id="about">
         <div class="container mx-auto text-white font-limelight bg-color1 rounded-xl">
             <h2 class="text-[3rem] text-center bg-color2">Frontend</h2>
             <div class="grid grid-cols-4 gap-2">
@@ -197,52 +195,90 @@
 
 
 
-    <section class="project bg-color3" id="project">
-        <div class="col1">
-            <div class="box">On Going</div>
-            <div class="box">On Going</div>
-            <div class="box">On Going</div>
-        </div>
-        <div class="col2">
-            <h1>Project</h1>
-            <img src="assets/gif/alice-aris.gif" alt="duck">
+    <section class="container mx-auto bg-color3 font-limelight " id="project">
+        <div class="w-full flex  justify-evenly py-10 px-20 rounded-xl">
 
+            <img class="w-5/12 h-96" src="assets/project/web e-commerce.jpeg" alt="e-commerce">
+
+            <div class="w-7/12 h-96 bg-gradient-to-r from-red-100 to-color3  p-10 relative">
+                <h1 class="text-[2rem] mb-5">Tittle</h1>
+                <span class="bg-color3 text-white px-5 rounded-xl">Description</span>
+                <p class="w-10/12 ml-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, recusandae hic tenetur voluptas exercitationem numquam illo porro similique blanditiis facere adipisci dolor quos, incidunt sapiente perferendis sequi vitae. Iusto, nisi?</p>
+                <a class="bg-color1 text-white px-16 py-3 absolute bottom-10 right-40 rounded-xl hover:ring-white ring-4" href="#">Detail</a>
+            </div>
         </div>
+
+        <div class="w-full flex  justify-evenly py-10 px-20 rounded-xl">
+
+            
+            <div class="w-7/12 h-96 bg-gradient-to-r from-red-100 to-color3  p-10 relative">
+                <h1 class="text-[2rem] mb-5">Tittle</h1>
+                <span class="bg-color3 text-white px-5 rounded-xl">Description</span>
+                <p class="w-10/12 ml-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, recusandae hic tenetur voluptas exercitationem numquam illo porro similique blanditiis facere adipisci dolor quos, incidunt sapiente perferendis sequi vitae. Iusto, nisi?</p>
+                <a class="bg-color1 text-white px-16 py-3 absolute bottom-10 right-40 rounded-xl hover:ring-white ring-4" href="#">Detail</a>
+            </div>
+            
+            <img class="w-5/12 h-96" src="assets/project/dashboard.jpeg" alt="e-commerce">
+        </div>
+
+        <div class="w-full flex  justify-evenly py-10 px-20 rounded-xl">
+
+            <img class="w-5/12 h-96" src="assets/project/booking.jpeg" alt="e-commerce">
+
+            <div class="w-7/12 h-96 bg-gradient-to-r from-red-100 to-color3  p-10 relative">
+                <h1 class="text-[2rem] mb-5">Tittle</h1>
+                <span class="bg-color3 text-white px-5 rounded-xl">Description</span>
+                <p class="w-10/12 ml-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, recusandae hic tenetur voluptas exercitationem numquam illo porro similique blanditiis facere adipisci dolor quos, incidunt sapiente perferendis sequi vitae. Iusto, nisi?</p>
+                <a class="bg-color1 text-white px-16 py-3 absolute bottom-10 right-40 rounded-xl hover:ring-white ring-4" href="#">Detail</a>
+            </div>
+        </div>
+
+        <div class="w-full flex  justify-evenly py-10 px-20 rounded-xl">
+
+            
+            <div class="w-7/12 h-96 bg-gradient-to-r from-red-100 to-color3  p-10 relative">
+                <h1 class="text-[2rem] mb-5">Tittle</h1>
+                <span class="bg-color3 text-white px-5 rounded-xl">Description</span>
+                <p class="w-10/12 ml-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, recusandae hic tenetur voluptas exercitationem numquam illo porro similique blanditiis facere adipisci dolor quos, incidunt sapiente perferendis sequi vitae. Iusto, nisi?</p>
+                <a class="bg-color1 text-white px-16 py-3 absolute bottom-10 right-40 rounded-xl hover:ring-white ring-4" href="#">Detail</a>
+            </div>
+            
+            <img class="w-5/12 h-96" src="assets/project/store.jpeg" alt="e-commerce">
+        </div>
+
     </section>
+
+
     <section class="contact" id="contact">
-        <div class="col">
-            <h1>Contact</h1>
-           <div class="platform">
-            <div class="row">
-                <a href="https://github.com/thisSurya123" target="_blank">
-                <img id="img-platform" src="assets/contact/github.png" alt="">
-                <p id="user-platform">thisSurya31</p></a>
-            </div>
-            <div class="row">
-                <a href="https://www.linkedin.com/in/surya-hasibuan-928574228/" target="_blank">
-                <img id="img-platform" src="assets/contact/linkedin.png" alt="">
-                <p id="user-platform">Surya Hasibuan</p></a>
-            </div>
-            <div class="row">
-                <a href="https://www.instagram.com/thissurya31/" target="_blank">
-                <img id="img-platform" src="assets/contact/Instagram_icon.png.webp" alt="">
-                <p id="user-platform">thissurya31</p></a>
-            </div>
-            <div class="row">
-                <a href="">
-                <img id="img-platform" src="assets/contact/gmail.png" alt="">
-                <p id="user-platform">thissurya31@gmail.com</p></a>
-            </div>
-           </div>
-            <div class="message">
+        <div class="container mx-auto bg-color3 my-10 flex font-limelight">
+            <div class="w-3/6  bg-white p-8">
+                <h1 class="text-[2rem] mb-10 border-b-2 border-black w-40 mx-auto text-center">Contact</h1>
                 <form action="">
-                    <textarea name="Message" id="" placeholder="Message" ></textarea><br>
-                    <button>Send</button>
+                    <input class="px-5 w-full border-b-2 border-black focus:outline-none text-[1.5rem] mb-10" type="text" placeholder="Name..." required/>
+                    <input class="px-5 w-full border-b-2 border-black focus:outline-none text-[1.5rem] mb-10" type="text" placeholder="Phone Number..." required/>
+                    <input class="px-5 w-full border-b-2 border-black focus:outline-none text-[1.5rem] mb-10" type="text" placeholder="Email..." required/>
+                    <label class="w-full" for="message">Message:</label><br>
+                    <textarea class="px-5 w-full border-b-2 border-black focus:outline-none text-[1rem]" rows="5" name="message" id="message"></textarea>
+                    <div class="flex w-full justify-center">
+                        <input type="submit" class="bg-color1 text-white w-40 py-3 hover:cursor-pointer  rounded-xl hover:ring-white ring-4 mt-10 " href="#" value="Send">
+                    </div>
                 </form>
             </div>
+            <div class="w-3/6">
+                
+            </div>
         </div>
     </section>
-    <footer>&copy;Copyright by Surya Ahmad Afandi</footer>
+
+
+    <footer class="bg-color3 py-10 px-40 text-white flex justify-between items-center font-limelight">
+        <div class="flex">
+            <a href=""><img src="assets/contact/Instagram_icon.png.webp" alt="img" class="w-10 mx-3"></a>
+            <a href="https://github.com/this-surya"><img src="assets/contact/github.png" alt="img" class="w-10 mx-3"></a>
+            <a href=""><img src="assets/contact/linkedin.png" alt="img" class="w-10 mx-3"></a>
+        </div>
+        <p>&copy;Copyright 2024 by Surya Ahmad Afandi</p>
+    </footer>
 
 
 

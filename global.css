@@ -1,1 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Merienda:wght@300..900&family=Monoton&display=swap');
+
+HTML{
+    scroll-behavior: smooth;
+}
