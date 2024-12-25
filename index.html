@@ -4,69 +4,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            color1: '#00224D',
+            color2: '#FF204E',
+            color3: '#A0153E'
+          },
+          boxShadow: {  
+                'text': '10px 10px 5px black;'
+            }
+        },
+        fontFamily: {
+            monoton: ["Monoton", "serif"],
+            limelight: ["Limelight", "serif"],
+            merienda: ["Merienda", "serif"]
+        }
+      }
+    }
+
+    </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="menu">
+    <nav class="container-md py-5 font-monoton text-xl px-5 font-bold justify-between flex bg-[#00224D] text-[#ffffff]">
+
+        <div class="hidden">
             <p>Menu</p>
         </div>
+
         <h2>Portofolio</h2>
-        <ul>
-            <li><a href="#homepage">HOME</a></li>
-            <li><a href="#about">SKILLS</a></li>
-            <li><a href="#project">PROJECT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+        <ul class="flex font-limelight">
+            <li><a class="mx-3" href="#homepage">HOME</a></li>
+            <li><a class="mx-3" href="#about">SKILLS</a></li>
+            <li><a class="mx-3" href="#project">PROJECT</a></li>
+            <li><a class="mx-3 bg-color2 p-2 rounded-xl" href="#contact">CONTACT ME</a></li>
         </ul>
     </nav>
-    <section class="homepage" id="homepage">
-        <div class="desc">
-         <h2>Welcome</h2>
-         <div class="description">
-            <p>Hallo, Selamat datang</p>
-            <p>Saya adalah seorang sofware engineering ini adalah 
-                website Portofolio saya yang berisikan informasi saya dan keahlian
-                yang saya meliki untuk mengembangkan web
+
+
+
+    <section class="flex flex-row bg-[#A0153E] h-screen" id="homepage">
+        <div class="bg-color1 text-white basis-5/6 my-20 mx-5 p-2 rounded-xl relative flex flex-col justify-center ">
+         <h2 class="text-[5rem]  text-[#A0153E;] font-bold  font-limelight mb-5">Welcome</h2>
+         <!-- <span class="underline bg-[#5D0E41] text-[3rem] block">Hy, There</span> -->
+         <div class="ml-5">
+
+            <p class="font-limelight text-[4rem] leading-none">
+                Hy There, My name is Surya, 
+                Im Software Engineering & fullstack web Developer
+                from Indonesia
             </p>
-            <a href="assets/Surya Ahmad Afandi CV.pdf" download>Download CV</a>
-         </div>
+            <!-- <p class="font-limelight text-[2rem] leading-none">
+                I'm Web Developver
+            </p>
+            <p class="font-limelight text-[2rem] leading-none">
+                I'm UI UX Designer
+            </p>
+            <p class="font-limelight text-[2rem] leading-none">
+                I'm Digital Bussines
+            </p> -->
+
+
+            <a class="bg-[#000000] py-3 px-10 ring-2 hover:ring-blue-500 absolute  text-[2rem] bottom-20 left-2/3 rounded-xl" href="assets/Surya Ahmad Afandi CV.pdf" download>Download CV</a>
         </div>
-       <div class="profile">
-        <h2>SURYA AHMAD AFANDI</h2>
-        <img src="assets/surya.png" alt="surya">
+        </div>
+
+
+       <div class="bg-[#FF204E] h-5/6 w-3/6 my-auto mr-10 rounded-xl relative">
+        <h2 class="text-[8rem] text-center font-bold font-monoton text-white  my-auto leading-none mt-10 " style="text-shadow: 10px 10px 5px black ;">
+            Together we are the Unity
+        </h2>
+        <!-- <img class="absolute top-0 right-40 w-[30rem] -translate-x-6 -translate-y-6 brightness-0" src="assets/mypic.png" alt="surya"> -->
+        <!-- <h2 class="bg-white py-2 rounded-xl text-center font-bold text-[2rem] z-50">Surya Ahmad Afandi</h2> -->
+        <img class="absolute  right-40 w-[30rem] drop-shadow-xl z-0 bottom-0" src="assets/mypic.png" alt="surya">
+        <p class="absolute bottom-0 bg-white w-full py-5 text-center text-[2rem] font-limelight rounded-xl">Surya Ahmad Afandi</p>
        </div>
     </section>
 
 
 
-    <section class="about" id="about">
-        <div class="col1">
+    <section class="about bg-color3 h-screen" id="about">
+        <div class="container mx-auto text-white font-limelight bg-color1 rounded-xl">
+            <h2 class="text-[3rem] text-center bg-color2">Frontend</h2>
+            <div class="grid grid-cols-4 gap-2">
+
+
+
+                <div class="flex flex-col justify-center items-center py-5">
+                    <img class="w-[15rem] h-[15rem]" src="assets/tech-stack/react.png" alt="reactjs">
+                    <h2 class="text-[2rem] mt-10">React JS</h2>
+                    <div class="w-5/6 bg-white rounded-xl relative">
+                        <span class="absolute text-center inset-x-2">70%</span>
+                        <div class="w-9/12 text-center bg-gradient-to-r from-red-900 to-blue-900 rounded-xl h-5"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center py-5">
+                    <img class="w-[15rem] h-[15rem]" src="assets/tech-stack/html.png" alt="reactjs">
+                    <h2 class="text-[2rem] mt-10">HTML</h2>
+                    <div class="w-5/6 bg-white rounded-xl relative">
+                        <span class="absolute text-center inset-x-2">100%</span>
+                        <div class="w-full text-center bg-gradient-to-r from-red-900 to-blue-900 rounded-xl h-5"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center py-5">
+                    <img class="w-[15rem] h-[15rem]" src="assets/tech-stack/css.png" alt="reactjs">
+                    <h2 class="text-[2rem] mt-10">CSS</h2>
+                    <div class="w-5/6 bg-white rounded-xl relative">
+                        <span class="absolute text-center inset-x-2">90%</span>
+                        <div class="w-11/12 text-center bg-gradient-to-r from-red-900 to-blue-900 rounded-xl h-5"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center py-5">
+                    <img class="w-[15rem] h-[15rem]" src="assets/tech-stack/js.png" alt="reactjs">
+                    <h2 class="text-[2rem] mt-10">JS</h2>
+                    <div class="w-5/6 bg-white rounded-xl relative">
+                        <span class="absolute text-center inset-x-2">80%</span>
+                        <div class="w-4/5 text-center bg-gradient-to-r from-red-900 to-blue-900 rounded-xl h-5"></div>
+                    </div>
+                </div>
+
+                
+              </div>  
+
+              <div class="container mx-auto text-white font-limelight bg-color1 rounded-xl">
+                <h2 class="text-[3rem] text-center bg-color2">Backend</h2>
+                <div class="grid grid-cols-4 gap-2">
+    
+    
+    
+                    <div class="flex flex-col justify-center items-center py-5">
+                        <img class="w-[15rem] h-[15rem]" src="assets/tech-stack/laravel.png" alt="reactjs">
+                        <h2 class="text-[2rem] mt-10">Laravel</h2>
+                        <div class="w-5/6 bg-white rounded-xl relative">
+                            <span class="absolute text-center inset-x-2">90%</span>
+                            <div class="w-5/6 text-center bg-gradient-to-r from-red-900 to-blue-900 rounded-xl h-5"></div>
+                        </div>
+                    </div>
+    
+                    <div class="flex flex-col justify-center items-center py-5">
+                        <img class="w-[15rem] h-[15rem]" src="assets/tech-stack/expressjs.png" alt="reactjs">
+                        <h2 class="text-[2rem] mt-10">Express JS</h2>
+                        <div class="w-5/6 bg-white rounded-xl relative">
+                            <span class="absolute text-center inset-x-2">90%</span>
+                            <div class="w-5/6 text-center bg-gradient-to-r from-red-900 to-blue-900 rounded-xl h-5"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center py-5">
+                        <img class="w-[15rem] h-[15rem]" src="assets/tech-stack/node.png" alt="reactjs">
+                        <h2 class="text-[2rem] mt-10">Node</h2>
+                        <div class="w-5/6 bg-white rounded-xl relative">
+                            <span class="absolute text-center inset-x-2">90%</span>
+                            <div class="w-5/6 text-center bg-gradient-to-r from-red-900 to-blue-900 rounded-xl h-5"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center py-5">
+                        <img class="w-[15rem] h-[15rem]" src="assets/tech-stack/php.png" alt="reactjs">
+                        <h2 class="text-[2rem] mt-10">PHP</h2>
+                        <div class="w-5/6 bg-white rounded-xl relative">
+                            <span class="absolute text-center inset-x-2">90%</span>
+                            <div class="w-5/6 text-center bg-gradient-to-r from-red-900 to-blue-900 rounded-xl h-5"></div>
+                        </div>
+                    </div>
+    
+                    
+                  </div>  
+
+        <!-- <div class="col1">
             <h1>Skills</h1>
             <img src="assets/gif/8bit-dance.gif" alt="duck">
-        </div>
-        <div class="galery">
+        </div> -->
+        <!-- <div class="galery">
             <div class="col">
                 <img src="assets/skills/reactjs.png" alt="reactjs">
                 <img src="assets/skills/laravel.png" alt="">
                 <img src="assets/skills/nextjs.jpg" alt="">
-                <img src="assets/skills/nodejs.png" alt="">
             </div>
             <div class="col">
-                <img src="assets/skills/bootstrap.jpeg" alt="reactjs">
-                <img src="assets/skills/tailwindcss.png" alt="">
                 <img src="assets/skills/java.jpg" alt="">
-                <img src="assets/skills/postman.png" alt="">
             </div>
             <div class="col">
                 <img src="assets/skills/mysql.png" alt="reactjs">
-                <img src="assets/skills/python.png" alt="">
                 <img src="assets/skills/kotlin.png" alt="">
-                <img src="assets/skills/php.png" alt="">
             </div>
-        </div>
+        </div> -->
     </section>
-    <section class="project" id="project">
+
+
+
+    <section class="project bg-color3" id="project">
         <div class="col1">
             <div class="box">On Going</div>
             <div class="box">On Going</div>
