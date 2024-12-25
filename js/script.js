@@ -5,3 +5,5 @@
 // img_platform.addEventListener("mouseover", function(){
 //     user_platform.style.display = "inline-block";
 // });
+
+console.log('js connected');
